@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(245, 243, 242);
+            text-align: justify;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 5px 5px 5px lightgray;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 80px;
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black
+        }
+
+        nav ul li a:hover {
+            color: blue;
+        }
+
+        .encabezado {
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        main {
+            margin-top: 100px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 50px;
+        }
+
+        .texto {
+            grid-area: texto;
+            padding: 30px;
+        }
+
+        .contenedor {
+            grid-area: foto;
+            display: grid;
+            grid-template-areas:
+                'foto icono';
+        }
+
+        .imagen {
+            grid-area: foto;
+        }
+
+        .precio {
+            font-size: larger;
+            font-weight: bold;
+            color: brown;
+        }
+
+        button {
+            background-color: rgb(255, 161, 68);
+            color: white;
+            border: 0;
+            padding: 20px;
+            font-size: large;
+            border-radius: 10px;
+            float: right;
+        }
+
+        button:hover {
+            background-color: rgb(255, 136, 0);
+        }
+
+        .impar {
+            display: grid;
+            grid-template-areas:
+                'texto foto';
+        }
+
+        .par {
+            display: grid;
+            grid-template-areas:
+                'foto texto';
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="encabezado">FILMIC CHARM</li>
+                <li style="font-size: larger; font-style: italic; text-decoration: underline;">Objetivos</li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="iniciarSesion.html" class="fas fa-user"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="impar">
+
+            <div class="texto">
+                <h1>Album Polaroid</h1>
+                <p>
+                    Quisque placerat consectetur lectus in mollis. Cras congue finibus ligula aliquam ullamcorper.
+                    Integer velit urna, blandit et velit vitae, varius mollis odio. In a elit lacinia enim ullamcorper
+                    dignissim vitae et ligula. Nunc scelerisque ex in dolor dapibus iaculis. Nullam blandit libero
+                    condimentum magna faucibus tristique. Nunc finibus volutpat quam, ac fermentum magna congue eget.
+                    Etiam eget sagittis purus, in vestibulum arcu. Sed a metus condimentum, venenatis erat sed, ornare
+                    massa. Phasellus at elit nunc. Ut tempus gravida eros, ut consectetur urna vulputate at. Suspendisse
+                    aliquet odio id finibus commodo. In finibus dignissim odio, id dignissim leo malesuada a. Cras in
+                    suscipit turpis. Vestibulum tincidunt magna eget efficitur eleifend.
+                </p>
+
+                <p class="precio">
+                    Precio: 25€
+                </p>
+                <button>
+                    Comprame
+                </button>
+            </div>
+
+
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/objetivo3.jpg" alt="Objetivo" width=600 height="460"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="par">
+
+            <div class="texto">
+                <h1>Mochila</h1>
+                <p>
+                    Nullam ultrices libero eget convallis hendrerit. Sed facilisis, ante sit amet congue cursus, nibh
+                    turpis scelerisque lectus, sed commodo est nisl nec mauris. Curabitur nec fringilla leo. Vivamus
+                    interdum, elit eget vestibulum malesuada, nisi diam tempus magna, sed fermentum elit leo at nisl.
+                    Morbi venenatis ex eu neque iaculis, sit amet elementum neque pharetra. Aliquam sed felis vitae
+                    lorem blandit tincidunt. Donec nec facilisis augue, sed semper est. Donec a arcu urna. Phasellus
+                    mattis tristique felis, at tempus leo accumsan imperdiet. Aenean fringilla, risus vitae aliquam
+                    scelerisque, dui leo bibendum felis, in scelerisque neque velit sit amet purus. Duis in nibh
+                    interdum, rhoncus eros consequat, malesuada eros. Quisque eu dolor ac mauris efficitur pretium.
+                </p>
+
+                <p class="precio">
+                    Precio: 70€
+                </p>
+
+                <button>
+                    Comprame
+                </button>
+            </div>
+
+
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/objetivo2.jpg" alt="Objetivo" width=600 height="460"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="impar">
+
+            <div class="texto">
+                <h1>Correas</h1>
+                <p>
+                    Quisque placerat consectetur lectus in mollis. Cras congue finibus ligula aliquam ullamcorper.
+                    Integer velit urna, blandit et velit vitae, varius mollis odio. In a elit lacinia enim ullamcorper
+                    dignissim vitae et ligula. Nunc scelerisque ex in dolor dapibus iaculis. Nullam blandit libero
+                    condimentum magna faucibus tristique. Nunc finibus volutpat quam, ac fermentum magna congue eget.
+                    Etiam eget sagittis purus, in vestibulum arcu. Sed a metus condimentum, venenatis erat sed, ornare
+                    massa. Phasellus at elit nunc. Ut tempus gravida eros, ut consectetur urna vulputate at. Suspendisse
+                    aliquet odio id finibus commodo. In finibus dignissim odio, id dignissim leo malesuada a. Cras in
+                    suscipit turpis. Vestibulum tincidunt magna eget efficitur eleifend.
+                </p>
+
+                <p class="precio">
+                    Precio: 12€
+                </p>
+                <button>
+                    Comprame
+                </button>
+            </div>
+
+
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/objetivo.jpg" alt="Objetivo" width=600 height="460"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

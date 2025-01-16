@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(245, 243, 242);
+            text-align: justify;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 5px 5px 5px lightgray;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 80px;
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black
+        }
+
+        nav ul li a:hover {
+            color: blue;
+        }
+
+        .encabezado {
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        main{
+            margin-top: 100px;
+        }
+
+        section{
+            background-color: white;
+            margin-bottom: 50px;
+        }
+
+        .texto{
+            grid-area: texto;
+            padding: 30px;
+        }
+
+        .contenedor{
+            grid-area: foto;
+            display: grid;
+            grid-template-areas: 
+            'foto icono';
+        }
+
+        .imagen{
+            grid-area: foto;
+        }
+
+        .icono{
+            grid-area: icono;
+            display: grid;
+            grid-template-areas: 
+            'icono1 icono2 icono3'
+            'icono4 icono5 icono6'
+            'icono7 icono8 icono9';
+        }
+
+        .icono img{
+            display: block;
+        }
+
+        .precio{
+            font-size: larger;
+            font-weight: bold;
+            color: brown;
+        }
+
+        button{
+            background-color: rgb(255, 161, 68);
+            color: white;
+            border: 0;
+            padding: 20px;
+            font-size: large;
+            border-radius: 10px;
+            float: right;
+        }
+
+        button:hover{
+            background-color: rgb(255, 136, 0);
+        }
+
+        .impar{
+            display: grid;
+            grid-template-areas: 
+            'texto foto';
+        }
+
+        .par{
+            display: grid;
+            grid-template-areas: 
+            'foto texto';
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="encabezado">FILMIC CHARM</li>
+                <li style="font-size: larger; font-style: italic; text-decoration: underline;">Carretes</li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="iniciarSesion.html" class="fas fa-user"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="impar">
+
+            <div class="texto">
+                <h1>Kodak Color PLus 200 </h1>
+                <p>
+                    Quisque placerat consectetur lectus in mollis. Cras congue finibus ligula aliquam ullamcorper. Integer velit urna, blandit et velit vitae, varius mollis odio. In a elit lacinia enim ullamcorper dignissim vitae et ligula. Nunc scelerisque ex in dolor dapibus iaculis. Nullam blandit libero condimentum magna faucibus tristique. Nunc finibus volutpat quam, ac fermentum magna congue eget. Etiam eget sagittis purus, in vestibulum arcu. Sed a metus condimentum, venenatis erat sed, ornare massa. Phasellus at elit nunc. Ut tempus gravida eros, ut consectetur urna vulputate at. Suspendisse aliquet odio id finibus commodo. In finibus dignissim odio, id dignissim leo malesuada a. Cras in suscipit turpis. Vestibulum tincidunt magna eget efficitur eleifend.
+                </p>
+
+                <p class="precio">
+                    Precio: 12,90€
+                </p>
+                <button>
+                    Comprame
+                </button>
+            </div>
+            
+
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/colorplus.jpg" alt="Kodak Color Plus 200" width=400 height="460"></a>
+                </div>
+                
+                <div class="icono">
+                    <a><img src="imagenes/colorplus3.jpg" alt="Kodak Color Plus 200" width=100></a>
+                    <a><img src="imagenes/colorplus4.jpg" alt="Kodak Color Plus 200" width=100></a>
+                    <a><img src="imagenes/colorplus5.jpg" alt="Kodak Color Plus 200" width=100></a>
+                    <a><img src="imagenes/colorplus6.jpg" alt="Kodak Color Plus 200" width=100></a>
+                    <a><img src="imagenes/colorplus7.jpg" alt="Kodak Color Plus 200" width=100></a>
+                    <a><img src="imagenes/colorplus8.jpg" alt="Kodak Color Plus 200" width=100></a>
+                    <a><img src="imagenes/colorplus10.jpg" alt="Kodak Color Plus 200" width=100></a>
+                    <a><img src="imagenes/colorplus9.jpg" alt="Kodak Color Plus 200" width=100></a>
+                    <a><img src="imagenes/colorplus11.jpg" alt="Kodak Color Plus 200" width=100></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="par">
+
+            <div class="texto">
+                <h1>Kodak Gold 200 </h1>
+                <p>
+                    Nullam ultrices libero eget convallis hendrerit. Sed facilisis, ante sit amet congue cursus, nibh turpis scelerisque lectus, sed commodo est nisl nec mauris. Curabitur nec fringilla leo. Vivamus interdum, elit eget vestibulum malesuada, nisi diam tempus magna, sed fermentum elit leo at nisl. Morbi venenatis ex eu neque iaculis, sit amet elementum neque pharetra. Aliquam sed felis vitae lorem blandit tincidunt. Donec nec facilisis augue, sed semper est. Donec a arcu urna. Phasellus mattis tristique felis, at tempus leo accumsan imperdiet. Aenean fringilla, risus vitae aliquam scelerisque, dui leo bibendum felis, in scelerisque neque velit sit amet purus. Duis in nibh interdum, rhoncus eros consequat, malesuada eros. Quisque eu dolor ac mauris efficitur pretium.
+                </p>
+
+                <p class="precio">
+                    Precio: 14€
+                </p>
+
+                <button>
+                    Comprame
+                </button>
+            </div>
+            
+
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/gold200.jpg" alt="Kodak Gold 200" width=400 height="460"></a>
+                </div>
+                
+                <div class="icono">
+                    <a><img src="imagenes/gold2.jpg" alt="Kodak Gold 200" width=100></a>
+                    <a><img src="imagenes/gold3.jpg" alt="Kodak Gold 200" width=100></a>
+                    <a><img src="imagenes/gold4.jpg" alt="Kodak Gold 200" width=100></a>
+                    <a><img src="imagenes/gold5.jpg" alt="Kodak Gold 200" width=100></a>
+                    <a><img src="imagenes/gold6.jpg" alt="Kodak Gold 200" width=100></a>
+                    <a><img src="imagenes/gold7.jpg" alt="Kodak Gold 200" width=100></a>
+                    <a><img src="imagenes/gold8.jpg" alt="Kodak Gold 200" width=100></a>
+                    <a><img src="imagenes/gold9.jpg" alt="Kodak Gold 200" width=100></a>
+                    <a><img src="imagenes/gold10.jpg" alt="Kodak Gold 200" width=100></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="impar">
+
+            <div class="texto">
+                <h1>Kodak UltraMax 400</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in augue eget lectus consectetur ornare eget in turpis. In pulvinar dui sit amet interdum varius. Praesent pretium nibh vel arcu finibus egestas. Curabitur ultrices mollis ex nec faucibus. Ut quis nisi in tellus congue sodales id sit amet orci. Mauris porttitor nibh ac purus tristique rhoncus. Etiam vehicula ut massa ut aliquam. Aenean enim nibh, ornare scelerisque porta ac, placerat eu nunc. Pellentesque tincidunt leo a turpis sollicitudin iaculis. Duis consectetur neque et diam sollicitudin, eu cursus quam mattis. Pellentesque ullamcorper dolor ac finibus blandit. Duis imperdiet euismod arcu, sed tempus augue maximus quis. Ut cursus, dolor vitae finibus sagittis, libero massa pulvinar nisi, a accumsan lectus urna sed turpis. Nullam eleifend sapien consequat tortor tristique tincidunt. Cras iaculis quam ut quam viverra lobortis.
+                </p>
+
+                <p class="precio">
+                    Precio: 15,90€
+                </p>
+
+                <button>
+                    Comprame
+                </button>
+            </div>
+            
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/ultramax.jpg" alt="Kodak UltraMax 400" width=400 height="460"></a>
+                </div>
+                
+                <div class="icono">
+                    <a><img src="imagenes/ultra2.jpg" alt="Kodak UltraMax 400" width=100></a>
+                    <a><img src="imagenes/ultra3.jpg" alt="Kodak UltraMax 400" width=100></a>
+                    <a><img src="imagenes/ultra4.jpg" alt="Kodak UltraMax 400" width=100></a>
+                    <a><img src="imagenes/ultra5.jpg" alt="Kodak UltraMax 400" width=100></a>
+                    <a><img src="imagenes/ultra6.jpg" alt="Kodak UltraMax 400" width=100></a>
+                    <a><img src="imagenes/ultra7.jpg" alt="Kodak UltraMax 400" width=100></a>
+                    <a><img src="imagenes/ultra8.jpg" alt="Kodak UltraMax 400" width=100></a>
+                    <a><img src="imagenes/ultra9.jpg" alt="Kodak UltraMax 400" width=100></a>
+                    <a><img src="imagenes/ultra10.jpg" alt="Kodak UltraMax 400" width=100></a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="par">
+
+            <div class="texto">
+                <h1>Kodak Ektar 100 </h1>
+                <p>
+                    Quisque placerat consectetur lectus in mollis. Cras congue finibus ligula aliquam ullamcorper. Integer velit urna, blandit et velit vitae, varius mollis odio. In a elit lacinia enim ullamcorper dignissim vitae et ligula. Nunc scelerisque ex in dolor dapibus iaculis. Nullam blandit libero condimentum magna faucibus tristique. Nunc finibus volutpat quam, ac fermentum magna congue eget. Etiam eget sagittis purus, in vestibulum arcu. Sed a metus condimentum, venenatis erat sed, ornare massa. Phasellus at elit nunc. Ut tempus gravida eros, ut consectetur urna vulputate at. Suspendisse aliquet odio id finibus commodo. In finibus dignissim odio, id dignissim leo malesuada a. Cras in suscipit turpis. Vestibulum tincidunt magna eget efficitur eleifend.
+                </p>
+
+                <p class="precio">
+                    Precio: 18€
+                </p>
+
+                <button>
+                    Comprame
+                </button>
+            </div>
+            
+
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/ektar.jpg" alt="Kodak Ektar 100" width=400 height="460"></a>
+                </div>
+                
+                <div class="icono">
+                    <a><img src="imagenes/ektar2.jpg" alt="Kodak Ektar 100" width=100></a>
+                    <a><img src="imagenes/ektar3.jpg" alt="Kodak Ektar 100" width=100></a>
+                    <a><img src="imagenes/ektar11.jpg" alt="Kodak Ektar 100" width=100></a>
+                    <a><img src="imagenes/ektar5.jpg" alt="Kodak Ektar 100" width=100></a>
+                    <a><img src="imagenes/ektar6.jpg" alt="Kodak Ektar 100" width=100></a>
+                    <a><img src="imagenes/ektar7.jpg" alt="Kodak Ektar 100" width=100></a>
+                    <a><img src="imagenes/ektar8.jpg" alt="Kodak Ektar 100" width=100></a>
+                    <a><img src="imagenes/ektar9.jpg" alt="Kodak Ektar 100" width=100></a>
+                    <a><img src="imagenes/ektar10.jpg" alt="Kodak Ektar 100" width=100></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="impar">
+
+            <div class="texto">
+                <h1>CineStill 800</h1>
+                <p>
+                    Nullam ultrices libero eget convallis hendrerit. Sed facilisis, ante sit amet congue cursus, nibh turpis scelerisque lectus, sed commodo est nisl nec mauris. Curabitur nec fringilla leo. Vivamus interdum, elit eget vestibulum malesuada, nisi diam tempus magna, sed fermentum elit leo at nisl. Morbi venenatis ex eu neque iaculis, sit amet elementum neque pharetra. Aliquam sed felis vitae lorem blandit tincidunt. Donec nec facilisis augue, sed semper est. Donec a arcu urna. Phasellus mattis tristique felis, at tempus leo accumsan imperdiet. Aenean fringilla, risus vitae aliquam scelerisque, dui leo bibendum felis, in scelerisque neque velit sit amet purus. Duis in nibh interdum, rhoncus eros consequat, malesuada eros. Quisque eu dolor ac mauris efficitur pretium.
+                </p>
+
+                <p class="precio">
+                    Precio: 25€
+                </p>
+
+                <button>
+                    Comprame
+                </button>
+            </div>
+            
+
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/cinestill2.jpg" alt="CineStill 800" width=400 height="460"></a>
+                </div>
+                
+                <div class="icono">
+                    <a><img src="imagenes/cine2.jpg" alt="CineStill 800" width=100></a>
+                    <a><img src="imagenes/cine3.jpg" alt="CineStill 800" width=100></a>
+                    <a><img src="imagenes/cine4.jpg" alt="CineStill 800" width=100></a>
+                    <a><img src="imagenes/cine5.jpg" alt="CineStill 800" width=100></a>
+                    <a><img src="imagenes/cine6.jpg" alt="CineStill 800" width=100></a>
+                    <a><img src="imagenes/cine7.jpg" alt="CineStill 800" width=100></a>
+                    <a><img src="imagenes/cine8.jpg" alt="CineStill 800" width=100></a>
+                    <a><img src="imagenes/cine9.jpg" alt="CineStill 800" width=100></a>
+                    <a><img src="imagenes/cine10.jpg" alt="CineStill 800" width=100></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="par">
+
+            <div class="texto">
+                <h1>Lomography 100</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in augue eget lectus consectetur ornare eget in turpis. In pulvinar dui sit amet interdum varius. Praesent pretium nibh vel arcu finibus egestas. Curabitur ultrices mollis ex nec faucibus. Ut quis nisi in tellus congue sodales id sit amet orci. Mauris porttitor nibh ac purus tristique rhoncus. Etiam vehicula ut massa ut aliquam. Aenean enim nibh, ornare scelerisque porta ac, placerat eu nunc. Pellentesque tincidunt leo a turpis sollicitudin iaculis. Duis consectetur neque et diam sollicitudin, eu cursus quam mattis. Pellentesque ullamcorper dolor ac finibus blandit. Duis imperdiet euismod arcu, sed tempus augue maximus quis. Ut cursus, dolor vitae finibus sagittis, libero massa pulvinar nisi, a accumsan lectus urna sed turpis. Nullam eleifend sapien consequat tortor tristique tincidunt. Cras iaculis quam ut quam viverra lobortis.
+                </p>
+
+                <p class="precio">
+                    Precio: 11,90€
+                </p>
+
+                <button>
+                    Comprame
+                </button>
+            </div>
+            
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/lomo.jpg" alt="Lomography 100" width=400 height="460"></a>
+                </div>
+                
+                <div class="icono">
+                    <a><img src="imagenes/lomo10.jpg" alt="Lomography 100" width=100></a>
+                    <a><img src="imagenes/lomo2.jpg" alt="Lomography 100" width=100></a>
+                    <a><img src="imagenes/lomo3.jpg" alt="Lomography 100" width=100></a>
+                    <a><img src="imagenes/lomo5.jpg" alt="Lomography 100" width=100></a>
+                    <a><img src="imagenes/lomo4.jpg" alt="Lomography 100" width=100></a>
+                    <a><img src="imagenes/lomo7.jpg" alt="Lomography 100" width=100></a>
+                    <a><img src="imagenes/lomo6.jpg" alt="Lomography 100" width=100></a>
+                    <a><img src="imagenes/lomo8.jpg" alt="Lomography 100" width=100></a>
+                    <a><img src="imagenes/lomo9.jpg" alt="Lomography 100" width=100></a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="impar">
+
+            <div class="texto">
+                <h1>FujiFilm Color 200</h1>
+                <p>
+                    Quisque placerat consectetur lectus in mollis. Cras congue finibus ligula aliquam ullamcorper. Integer velit urna, blandit et velit vitae, varius mollis odio. In a elit lacinia enim ullamcorper dignissim vitae et ligula. Nunc scelerisque ex in dolor dapibus iaculis. Nullam blandit libero condimentum magna faucibus tristique. Nunc finibus volutpat quam, ac fermentum magna congue eget. Etiam eget sagittis purus, in vestibulum arcu. Sed a metus condimentum, venenatis erat sed, ornare massa. Phasellus at elit nunc. Ut tempus gravida eros, ut consectetur urna vulputate at. Suspendisse aliquet odio id finibus commodo. In finibus dignissim odio, id dignissim leo malesuada a. Cras in suscipit turpis. Vestibulum tincidunt magna eget efficitur eleifend.
+                </p>
+
+                <p class="precio">
+                    Precio: 11,90€
+                </p>
+
+                <button>
+                    Comprame
+                </button>
+            </div>
+            
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/fujicolor.jpg" alt="FujiFilm Color 200" width=400 height="460"></a>
+                </div>
+                
+                <div class="icono">
+                    <a><img src="imagenes/fuji.jpg" alt="FujiFilm Color 200" width=100></a>
+                    <a><img src="imagenes/fuji2.jpg" alt="FujiFilm Color 200" width=100></a>
+                    <a><img src="imagenes/fuji3.jpg" alt="FujiFilm Color 200" width=100></a>
+                    <a><img src="imagenes/fuji4.jpg" alt="FujiFilm Color 200" width=100></a>
+                    <a><img src="imagenes/fuji5.jpg" alt="FujiFilm Color 200" width=100></a>
+                    <a><img src="imagenes/fuji6.jpg" alt="FujiFilm Color 200" width=100></a>
+                    <a><img src="imagenes/fuji7.jpg" alt="FujiFilm Color 200" width=100></a>
+                    <a><img src="imagenes/fuji8.jpg" alt="FujiFilm Color 200" width=100></a>
+                    <a><img src="imagenes/fuji9.jpg" alt="FujiFilm Color 200" width=100></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="par">
+
+            <div class="texto">
+                <h1>Ilford FP4 125</h1>
+                <p>
+                    Quisque placerat consectetur lectus in mollis. Cras congue finibus ligula aliquam ullamcorper. Integer velit urna, blandit et velit vitae, varius mollis odio. In a elit lacinia enim ullamcorper dignissim vitae et ligula. Nunc scelerisque ex in dolor dapibus iaculis. Nullam blandit libero condimentum magna faucibus tristique. Nunc finibus volutpat quam, ac fermentum magna congue eget. Etiam eget sagittis purus, in vestibulum arcu. Sed a metus condimentum, venenatis erat sed, ornare massa. Phasellus at elit nunc. Ut tempus gravida eros, ut consectetur urna vulputate at. Suspendisse aliquet odio id finibus commodo. In finibus dignissim odio, id dignissim leo malesuada a. Cras in suscipit turpis. Vestibulum tincidunt magna eget efficitur eleifend.
+                </p>
+
+                <p class="precio">
+                    Precio: 9,90€
+                </p>
+                <button>
+                    Comprame
+                </button>
+            </div>
+            
+
+            <div class="contenedor">
+                <div class="imagen">
+                    <a><img src="imagenes/byn.jpg" alt="Ilford FP4 125" width=400 height="460"></a>
+                </div>
+                
+                <div class="icono">
+                    <a><img src="imagenes/byn10.jpg" alt="Ilford FP4 125" width=100></a>
+                    <a><img src="imagenes/byn5.jpg" alt="Ilford FP4 125" width=100></a>
+                    <a><img src="imagenes/byn9.jpg" alt="Ilford FP4 125" width=100></a>
+                    <a><img src="imagenes/byn2.jpg" alt="Ilford FP4 125" width=100></a>
+                    <a><img src="imagenes/byn3.jpg" alt="Ilford FP4 125" width=100></a>
+                    <a><img src="imagenes/byn4.jpg" alt="Ilford FP4 125" width=100></a>
+                    <a><img src="imagenes/byn6.jpg" alt="Ilford FP4 125" width=100></a>
+                    <a><img src="imagenes/byn8.jpg" alt="Ilford FP4 125" width=100></a>
+                    <a><img src="imagenes/byn9.jpg" alt="Ilford FP4 125" width=100></a>
+                </div>
+            </div>
+        </section>     
+    </main>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(245, 243, 242);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .foto {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 100%;
+            background-image: url('imagenes/inicioSesion.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        .contenedor-texto {
+            background-color: white;
+            width: 450px;
+            margin: 50px 60px 60px 50px;
+            text-align: justify;
+            padding: 0 100px;
+            border-radius: 40px;
+        }
+
+        header h1,
+        main p {
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: xx-large;
+            margin: 0;
+            padding-top: 50px;
+
+        }
+
+        main p {
+            padding-top: 10px;
+            font-style: italic;
+        }
+
+        main form {
+            padding-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        span {
+            color: rgb(196, 19, 19);
+        }
+
+        input {
+            background-color: rgba(185, 191, 192, 0.183);
+            border: 0;
+            height: 40px;
+            width: 415px;
+        }
+
+        .boton {
+            background-color: black;
+            color: white;
+            width: 400px;
+            height: 50px;
+            border-radius: 20px;
+            margin-right: 40px;
+            margin-left: 10px;
+            margin-bottom: 40px;
+            border-color: 0 solid black;
+
+        }
+
+        .boton:hover {
+            background-color: #409dc4;
+            color: white;
+        }
+
+        a {
+            color: black;
+        }
+
+        .boton a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor-texto">
+        <header>
+            <h1>Iniciar Sesión</h1>
+        </header>
+
+        <main>
+            <p>¿Es tu primera vez? <a href="registro.html">Regístrate</a></p>
+
+            <form action="/submit" method="post">
+                <label for="email">Email<span>*</span></label>
+
+                <br>
+
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com"
+                    title="Introduce una dirección de correo válida." required>
+
+
+                <br>
+                <br>
+
+                <label for="contrasenia">Contraseña<span>*</span></label>
+
+                <br>
+
+                <input type="password" id="contrasenia" name="contrasenia" placeholder="Escriba una contraseña"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="La contraseña debe tener al menos 8 caracteres, incluyendo una letra mayúscula, una minúscula y un número."
+                    required>
+
+                <br>
+
+
+                <p><a href="">¿Olvidaste la contraseña?</a></p>
+
+                <br>
+                <button class="boton"><a href="index.html">Iniciar Sesión</a></button>
+            </form>
+        </main>
+    </div>
+
+    <div class="foto"></div>
+</body>
+
+</html>

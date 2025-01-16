@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(245, 243, 242);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .foto {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 100%;
+            background-image: url('imagenes/contactanos2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .contenedor-texto {
+            width: 430px;
+            background-color: white;
+            margin: 50px 60px 50px 560px;
+            text-align: justify;
+            padding: 0 100px;
+            border-radius: 40px;
+        }
+
+        header h1 {
+            font-size: xx-large;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        main p {
+            padding-top: 10px;
+            padding-left: 80px;
+            font-style: italic;
+        }
+
+        main form {
+            padding-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        span {
+            color: rgb(196, 19, 19);
+        }
+
+        .etiqueta {
+            padding-right: 150px;
+        }
+
+        input {
+            background-color: rgba(185, 191, 192, 0.183);
+            border: 0;
+        }
+
+        .caja {
+            height: 40px;
+            width: 180px;
+        }
+
+        .caja2 {
+            height: 40px;
+            width: 180px;
+            margin-left: 45px;
+        }
+
+        .caja3 {
+            height: 40px;
+            width: 415px;
+        }
+
+        .terminos {
+            font-size: small;
+            font-style: italic;
+        }
+
+        .terminos a {
+            color: blue;
+        }
+
+        .boton {
+            background-color: #5ab2da;
+            color: white;
+            width: 130px;
+            height: 50px;
+            border-radius: 20px;
+            margin-left: 5px;
+            margin-bottom: 40px;
+            border: 1px solid black;
+        }
+
+        .boton:hover {
+            background-color: #409dc4;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .boton a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="foto"></div>
+
+    <div class="contenedor-texto">
+        <header>
+            <h1>Crea tu cuenta gratis</h1>
+        </header>
+
+        <main>
+            <p>Rellena el siguiente formulario</p>
+
+            <form action="/submit" method="post">
+                <label class="etiqueta" for="nombre">Nombre<span>*</span></label>
+                <label for="apellido">Apellidos<span>*</span></label>
+
+                <br>
+
+                <input class="caja" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" minlength="5"
+                    maxlength="50" title="Por favor, introduce tu nombre y apellidos." required>
+                <input class="caja2" type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos"
+                    minlength="5" maxlength="50" size="20" title="Por favor, introduce tus apellidos." required>
+
+                <br>
+                <br>
+
+                <label for="email">Email<span>*</span></label>
+
+                <br>
+
+                <input class="caja3" type="email" id="email" name="email" placeholder="ejemplo@email.com"
+                    title="Introduce una dirección de correo válida." required>
+
+
+                <br>
+                <br>
+
+                <label for="contrasenia">Contraseña<span>*</span></label>
+
+                <br>
+
+                <input class="caja3" type="password" id="contrasenia" name="contrasenia"
+                    placeholder="Escriba una contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="La contraseña debe tener al menos 8 caracteres, incluyendo una letra mayúscula, una minúscula y un número."
+                    required>
+
+                <br>
+                <br>
+
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+
+                <br>
+
+                <input class="caja3" type="date" id="fechaNacimiento" name="fechaNacimiento"
+                    title="Elige tu fecha de nacimiento.">
+
+                <br>
+                <br>
+
+                <label for="sexo">Sexo</label>
+                <input type="radio" id="sexo" name="sexo" value="1" title="Masculino">Masculino
+                <input type="radio" id="sexo1" name="sexo" value="2" title="Femenino">Femenino
+                <input type="radio" id="sexo3" name="sexo" value="3" title="Otro" checked>Otro
+
+                <br>
+                <br>
+
+                <div class="espacio">
+                    <input type="checkbox" id="condiciones" name="condiciones" required>
+                    <label class="terminos" for="condiciones"><a href="terminosYCondiciones.html" target="_blank">Acepto
+                            los Terminos y
+                            Condiciones</a></label>
+                </div>
+
+                <br>
+                <br>
+
+                <input class="boton" type="submit" value="Registrarse">
+                <input class="boton" type="reset" name="resey" id="reset" value="Borrar">
+                <button class="boton"><a href="iniciarSesion.html">Iniciar Sesión</a></button>
+            </form>
+
+        </main>
+    </div>
+</body>
+
+</html>

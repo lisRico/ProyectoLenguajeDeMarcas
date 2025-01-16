@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <style type="text/css">
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fixed-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: 100%;
+            padding: 15px;
+            margin: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .fixed-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .fixed-menu ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 25px;
+            border-bottom: 1px solid lightgray;
+        }
+
+        .fixed-menu ul li a:hover {
+            background-color: lightgray;
+        }
+
+        .fixed-menu img {
+            width: 20px;
+        }
+
+        .content {
+            margin-left: 240px;
+            padding: 20px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        main nav ul li {
+            display: inline;
+        }
+
+        header {
+            border: 1px solid lightgray;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-areas: 'foto texto';
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .foto {
+            grid-area: foto;
+            margin-left: 20px;
+        }
+
+        .texto {
+            grid-area: texto;
+            padding: 30px;
+        }
+
+        .texto ul li {
+            display: inline;
+            margin: 20px;
+        }
+
+        .foto img {
+            width: 300px;
+            border-radius: 100px;
+        }
+
+        p a {
+            color: rgb(10, 66, 104);
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        div {
+            display: grid;
+            gap: 20px;
+            display: inline-block;
+            margin-left: 50px;
+        }
+
+        div img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-menu">
+        <h2>Instagram</h2>
+        <ul>
+            <li><a href="#">Inicio <img src="imagenes/home.png" alt="Casa"></a></li>
+            <li><a href="#">Buscar <img src="imagenes/insta5.png" alt="Lupa"></a></li>
+            <li><a href="#">Explorar <img src="imagenes/insta.png" alt="Brujula"></a></li>
+            <li><a href="#">Reels <img src="imagenes/insta4.png" alt="Reels"></a></li>
+            <li><a href="#">Mensajes <img src="imagenes/insta3.png" alt="Mensajes"></a></li>
+            <li><a href="#">Notificaciones <img src="imagenes/insta (2).png" alt="Corazon"></a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>FILMIC CHARM</h1>
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="imagenes/tienda.jpg">
+                </div>
+
+                <div class="texto">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span>1150</span> publicaciones</a></li>
+                            <li><a href="#"><span>34,5 mil</span> seguidores</a></li>
+                            <li><a href="#"><span>2390</span> seguidos</a></li>
+                        </ul>
+                    </nav>
+
+                    <p>
+                        Pasión por la foto analógica! <br>
+                        Cámaras, instantáneas, película de todos los formatos... <br>
+                        También revelamos e imprimimos 📷 <br>
+                        #lapeliculera <br>
+                        <a href="index.html">Nuestra web</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <img src="imagenes/ektar10.jpg">
+                <img src="imagenes/byn10.jpg">
+                <img src="imagenes/colorplus4.jpg">
+                <img src="imagenes/fuji3.jpg">
+                <img src="imagenes/lomo3.jpg">
+                <img src="imagenes/cine5.jpg">
+                <img src="imagenes/gold9.jpg">
+                <img src="imagenes/ultra3.jpg">
+                <img src="imagenes/gold3.jpg">
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>

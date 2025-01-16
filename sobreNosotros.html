@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(245, 243, 242);
+            text-align: justify;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 5px 5px 5px lightgray;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 80px;
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black
+        }
+
+        nav ul li a:hover {
+            color: blue;
+        }
+
+        .encabezado {
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        .contenedor {
+            width: 90%;
+            height: 90%;
+            margin: 120px 60px;
+        }
+
+        .texto {
+            float: left;
+            width: 550px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px lightgray;
+        }
+
+        .imagen {
+            float: right;
+            width: 100px;
+            margin-right: 380px;
+            margin-top: 80px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .contenedorEquipo {
+            margin-top: 100px;
+            background-color: white;
+            padding: 40px;
+            padding-bottom: 60px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px lightgray;
+            margin-bottom: 80px;
+        }
+
+        .contenedorEquipo h1,
+        .contenedorEquipo p {
+            text-align: center;
+        }
+
+        .personas {
+            display: grid;
+            grid-template-areas:
+                "Mark Angela Lucia";
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .personas p {
+            margin: 0 40px;
+        }
+
+        .texto2 {
+            float: right;
+            width: 550px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px lightgray;
+        }
+
+        .imagen2 {
+            float: left;
+            width: 100px;
+            margin-right: 380px;
+            margin-top: 30px;
+        }
+
+        .contenedorTrabajo {
+            margin-bottom: 80px;
+        }
+
+        .contenedorPrecio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px lightgray;
+        }
+
+        table {
+            width: 1000px;
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        caption {
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        th {
+            background-color: #99ccee;
+        }
+
+        tr:nth-child(even) {
+            vertical-align: middle;
+            background-color: #99ccee;
+        }
+
+        tr:nth-child(odd) {
+            vertical-align: middle;
+            background-color: #bbeeff;
+        }
+
+        footer p {
+            text-align: center;
+            padding: 40px;
+            margin: 0 50px 50px;
+            background-color: white;
+            box-shadow: 5px 5px 5px lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="encabezado">FILMIC CHARM</li>
+                <li style="font-size: larger; font-style: italic; text-decoration: underline;">Sobre Nosotros</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="iniciarSesion.html" class="fas fa-user"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="contenedorHistoria">
+            <div class="texto">
+                <h1>Nuestra Historia</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                    Donec vel blandit nibh. Donec euismod erat quis ligula sollicitudin fringilla.
+                </p>
+                <p>Nam et magna volutpat, vulputate nunc et, dignissim urna. Ut molestie condimentum lectus, volutpat
+                    eleifend lorem. Donec mollis viverra libero vel euismod. Suspendisse ex dui, facilisis nec
+                    consectetur sit amet, consectetur ut dui. Pellentesque viverra neque tortor, non scelerisque velit
+                    cursus sit amet. Praesent vel cursus massa. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada fames ac turpis egestas. Nam elementum vel dolor congue maximus. In nec urna hendrerit,
+                    fermentum ante consectetur, scelerisque tortor. Curabitur diam odio, consectetur eu bibendum at,
+                    volutpat in dui. Curabitur lobortis magna nisi, et finibus magna vehicula vel. Integer vitae
+                    convallis odio. Morbi.</p>
+
+            </div>
+
+            <div class="imagen">
+                <a href="https://www.pinterest.es/pin/279997301824702824/"><img src="imagenes/historia.jpg"
+                        alt="Lugar de trabajo"></a>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section class="contenedorEquipo">
+            <h1>Nuestro Equipo</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <div class="personas">
+                <section class="caja">
+                    <img src="imagenes/persona.jpg" alt="Persona" width="200px">
+                    <h3>Isabel</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip</p>
+                </section>
+
+                <section class="caja">
+                    <img src="imagenes/persona2.jpg" alt="persona2" width="150px">
+                    <h3>Mark</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip</p>
+                </section>
+
+                <section class="caja">
+                    <img src="imagenes/persona3.jpg" alt="persona3" width="150px">
+                    <h3>Elena</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="contenedorTrabajo">
+            <div class="texto2">
+                <h1>Como trabajamos</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Nam et magna volutpat, vulputate nunc et, dignissim urna. Ut molestie condimentum lectus, volutpat
+                    eleifend lorem. Donec mollis viverra libero vel euismod. Suspendisse ex dui, facilisis nec
+                    consectetur sit amet, consectetur ut dui. Pellentesque viverra neque tortor, non scelerisque velit
+                    cursus sit amet. Praesent vel cursus massa. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada fames ac turpis egestas. Nam elementum vel dolor congue maximus. In nec urna hendrerit,
+                    fermentum ante consectetur, scelerisque tortor. Curabitur diam odio, consectetur eu bibendum at,
+                    volutpat in dui. Curabitur lobortis magna nisi, et finibus magna vehicula vel. Integer vitae
+                    convallis odio. Morbi.
+                </p>
+
+                <p>
+                    Donec vel blandit nibh. Donec euismod erat quis ligula sollicitudin fringilla. Nam et magna
+                    volutpat, vulputate nunc et, dignissim urna. Ut molestie condimentum lectus, volutpat eleifend
+                    lorem. Donec mollis viverra libero vel euismod. Suspendisse ex dui, facilisis nec consectetur sit
+                    amet, consectetur ut dui. Pellentesque viverra neque tortor, non scelerisque velit cursus sit amet.
+                    Praesent vel cursus massa. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac turpis egestas. Nam elementum vel dolor congue maximus. In nec urna hendrerit, fermentum
+                    ante consectetur, scelerisque tortor. Curabitur diam odio, consectetur eu bibendum at, volutpat in
+                    dui. Curabitur lobortis magna nisi, et finibus magna vehicula vel. Integer vitae convallis odio.
+                    Morbi lacinia imperdiet nunc eu aliquet. Sed imperdiet id nibh vitae porta.
+                </p>
+
+            </div>
+
+            <div class="imagen2">
+                <a href="https://www.pinterest.es/pin/29977153762842529/"><img src="imagenes/laboratorio.jpg"
+                        alt="Lugar de trabajo"></a>
+            </div>
+
+            <div class="clear"></div>
+        </section>
+
+        <section class="contenedorPrecio">
+            <table cellspacing="5" cellpadding="5">
+                <caption>Precio revelado digital</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>1-10</th>
+                        <th>11-50</th>
+                        <th>51-100</th>
+                        <th>+ 100</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>10x15</td>
+                        <td>0,80€</td>
+                        <td>0,50€</td>
+                        <td>0,45€</td>
+                        <td>0,35€</td>
+                    </tr>
+
+                    <tr>
+                        <td>13x18</td>
+                        <td>1,20€</td>
+                        <td>1,00€</td>
+                        <td>0,90€</td>
+                        <td>0,70€</td>
+                    </tr>
+
+                    <tr>
+                        <td>13x18</td>
+                        <td>1,20€</td>
+                        <td>1,00€</td>
+                        <td>0,90€</td>
+                        <td>0,70€</td>
+                    </tr>
+
+                    <tr>
+                        <td>13x18</td>
+                        <td>1,20€</td>
+                        <td>1,00€</td>
+                        <td>0,90€</td>
+                        <td>0,70€</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <table cellspacing="5" cellpadding="5">
+                <caption>Precio revelado digital</caption>
+                <thead>
+                    <tr>
+                        <th>Tamaño</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Reveladop 35mm</td>
+                        <td>3,00€</td>
+                    </tr>
+
+                    <tr>
+                        <td>Reveladop 35mm a CD (4Mb)</td>
+                        <td>7,50€</td>
+                    </tr>
+
+                    <tr>
+                        <td>Reveladop 35mm a CD (18 Mb)</td>
+                        <td>9,00€</td>
+                    </tr>
+
+                    <tr>
+                        <td>Reveladop B/N 35mm a CD (4 Mb)</td>
+                        <td>8,50€</td>
+                    </tr>
+
+                    <tr>
+                        <td>Reveladop B/N 35mm a CD (18 Mb)</td>
+                        <td>10,5€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Creado por Lis Rico | Todos los derechos reservados | 1ºDAM 2024 Lenguaje de Marcas</p>
+    </footer>
+</body>
+
+</html>
